@@ -12,6 +12,7 @@
             background-color: rgb(237, 226, 226);
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         .col {
@@ -31,20 +32,28 @@
         .row {
             display: flex;
         }
+        .res{
+            background-color: aqua;
+            margin-top: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
         
-        h1{
+        /* h1{
            transform: translateX(44vw);
 
-        }
+        } */
     </style>
 </head>
 
 <body>
 
     <div class="container">
-    <h1>Tic Tac Toe</h1>
-
+        
         <div class="grid">
+            <h1 class="title">Tic Tac Toe</h1>
             <div class="row">
                 <div onclick="handleclick(this)" id="0" class="col"></div>
                 <div onclick="handleclick(this)" id="1" class="col"></div>
@@ -62,6 +71,8 @@
 
             </div>
         </div>
+
+        <button class="res">Restart</button>
     </div>
 
     <script src="script.js"></script>
